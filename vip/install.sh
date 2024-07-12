@@ -4,7 +4,7 @@ local verName="V1.0"
 local version=10
 local pid="[$$]"
 local p="[-]"
-local mycore=""
+local mycore="https://lrzozz.github.io/LunarBoost/vip/core.sh"
 local id="$(settings get secure android_id)"
 local trim_id="${id:0:6}"
 
