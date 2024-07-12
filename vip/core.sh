@@ -84,8 +84,9 @@ fi
 
 if echo "$PACKAGES" | grep -qw "$axeron"; then
   optimize_app
+  cmd device_config put game_overlay $runPackage mode=2,fps=165,downscaleFactor=0.5:mode=3,fps=90,downscaleFactor=0.4
   sleep 2
-  echo "└$s LAxeron is detected [Fast Connect]" && sleep 1
+  echo "└ LAxeron is detected [Fast Connect]" && sleep 1
 else
   echo "├$w LAxeron not Installed"
   echo "└$i Please download LAxeron app from FahrezONE officially"
