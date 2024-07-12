@@ -8,6 +8,15 @@ local mycore="https://lrzozz.github.io/LunarBoost/vip/core.sh"
 local id="$(settings get secure android_id)"
 local trim_id="${id:0:6}"
 
+case $1 in
+  --info )
+    echo "$name | VIP Information"
+    echo "ID: $trim_id"
+    echo "Version: $verName"
+    exit 0
+    ;;
+esac
+
 echo "$pid $name | VIP Feature"
 echo "$p Thanks You For Buy VIP, Enjoy"
 sleep 1
